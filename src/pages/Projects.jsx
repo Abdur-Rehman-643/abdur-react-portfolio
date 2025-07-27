@@ -100,28 +100,26 @@ const Projects = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsSectionVisible(true);
-        } else {
-          setIsSectionVisible(false);
-          setVisibleCards([]);
+          observer.disconnect(); // Only trigger once
         }
       },
-      { threshold: 0.3 }
+      {
+        threshold: 0.05, // Very low for mobile
+        rootMargin: "0px 0px -5% 0px", // Start animation slightly before full view
+      }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    if (sectionRef.current) observer.observe(sectionRef.current);
 
     return () => observer.disconnect();
   }, []);
 
-  // Animate cards one by one
   useEffect(() => {
     if (isSectionVisible) {
       projectData.forEach((_, i) => {
         setTimeout(() => {
           setVisibleCards((prev) => [...prev, i]);
-        }, i * 200);
+        }, i * 150); // Slightly faster for mobile responsiveness
       });
     }
   }, [isSectionVisible]);
@@ -134,7 +132,6 @@ const Projects = () => {
       style={{ fontFamily: "'Segoe UI', sans-serif" }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading Animation */}
         <h2
           className={`text-3xl sm:text-4xl font-bold text-center mb-10 text-gray-800 tracking-tight transition-all duration-700 ${
             isSectionVisible
@@ -154,10 +151,6 @@ const Projects = () => {
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-6"
               } hover:shadow-xl hover:-translate-y-2`}
-              style={{
-                minHeight: "260px",
-                transitionDelay: `${index * 150}ms`,
-              }}
             >
               <div className="p-4 sm:p-5">
                 <h6 className="text-lg sm:text-xl font-semibold mb-2 text-gray-800">
