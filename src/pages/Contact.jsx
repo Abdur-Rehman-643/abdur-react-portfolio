@@ -24,7 +24,7 @@ const Contact = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className={`relative py-14 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-gray-50 to-blue-50 transition-all duration-1000 ease-in-out ${
+      className={`mt-20 mb-0 relative py-14 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-gray-50 to-blue-50 transition-all duration-1000 ease-in-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       style={{ fontFamily: "'Segoe UI', sans-serif" }}

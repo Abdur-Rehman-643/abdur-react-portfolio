@@ -89,7 +89,7 @@ const Experience = () => {
     <section
       id="experience"
       ref={experienceRef}
-      className="mt-20 py-16 bg-white rounded-t-3xl"
+      className="mt-13 py-16 bg-white rounded-t-3xl"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2
