@@ -65,12 +65,6 @@ const projectData = [
     tech: ["Linux", "C++"],
   },
   {
-    title: "DOS Utility Tool",
-    description:
-      "Built a utility in x86 Assembly for basic DOS operations like file I/O, time/date display, and text-based interaction.",
-    tech: ["Assembly (x86)", "MASM", "DOS"],
-  },
-  {
     title: "Shortest Path Finder",
     description:
       "Implemented Dijkstra’s algorithm to compute shortest paths across graph nodes in a C++ system using STL.",
