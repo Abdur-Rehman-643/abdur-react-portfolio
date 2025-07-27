@@ -166,6 +166,7 @@ const skillsData = {
     "Python",
     "JavaScript",
     "C#",
+    "Assembly (x86)",
     "MERN Stack",
     "ASP.NET",
     "WPF",
