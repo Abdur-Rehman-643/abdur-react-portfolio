@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer
       ref={footerRef}
-      className="bg-gray-900 text-white py-4 px-4 sm:px-6 lg:px-8 transition-all duration-1000"
+      className="mt-0 mb-0 bg-gray-900 text-white py-4 px-4 sm:px-6 lg:px-8 transition-all duration-1000"
     >
       <div className="container mx-auto">
         <div className="row items-center text-center md:text-left">
