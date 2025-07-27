@@ -7,6 +7,7 @@ import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import Experience from "../pages/Experience";
 
 function Portfolio() {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -44,6 +45,7 @@ function Portfolio() {
         <Home />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Contact />
       </main>
