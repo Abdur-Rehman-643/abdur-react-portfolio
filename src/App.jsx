@@ -1,4 +1,5 @@
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <main className="container">
         <Portfolio />
       </main>
+      <Footer />
     </>
   );
 }

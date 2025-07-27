@@ -25,7 +25,7 @@ function Portfolio() {
         setTimeout(() => {
           setIsAtTop(atTop);
           setFadeHeader("opacity-100");
-        }, 200); // Wait for fade-out before swapping
+        }, 200);
       }
     };
 
