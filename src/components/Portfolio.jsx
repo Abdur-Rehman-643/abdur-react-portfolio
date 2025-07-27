@@ -6,7 +6,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Projects from "../pages/Projects";
-// import Contact from "../pages/Contact";
+import Contact from "../pages/Contact";
 import Experience from "../pages/Experience";
 
 function Portfolio() {
@@ -47,7 +47,7 @@ function Portfolio() {
         <Skills />
         <Experience />
         <Projects />
-        {/* <Contact /> */}
+        <Contact />
       </main>
     </>
   );
