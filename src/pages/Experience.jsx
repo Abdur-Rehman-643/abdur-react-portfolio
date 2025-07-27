@@ -39,17 +39,17 @@ const ExperienceCard = ({ experience, delay, isVisible }) => (
     }}
   >
     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
-      <h3 className="text-base sm:text-lg font-semibold text-gray-800">
+      <h5 className="text-base sm:text-lg font-semibold text-gray-800">
         {experience.role}
-      </h3>
+      </h5>
       <span className="text-gray-500 text-xs sm:text-sm font-medium">
         {experience.date} | {experience.location}
       </span>
     </div>
 
-    <h4 className="text-gray-600 font-medium mb-2 text-sm sm:text-base">
+    <h6 className="text-gray-600 font-medium mb-2 text-sm sm:text-base">
       {experience.company}
-    </h4>
+    </h6>
 
     <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
       {experience.points.map((point, idx) => (
