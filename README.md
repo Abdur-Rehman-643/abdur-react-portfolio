@@ -1,12 +1,80 @@
-# React + Vite
+# 🌐 Abdur Rehman - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **responsive, animated developer portfolio** built with **React.js**, **Tailwind CSS**, and **Bootstrap**. Designed to showcase your **skills**, **projects**, **experience**, and **contact** information in a modern, user-friendly layout optimized for both desktop and mobile devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+| Layer              | Technologies                                      |
+| ------------------ | ------------------------------------------------- |
+| **Frontend**       | React.js                                          |
+| **Styling**        | Tailwind CSS, Bootstrap                           |
+| **Animations**     | CSS Transitions, IntersectionObserver API         |
+| **Icons**          | Bootstrap Icons                                   |
+| **Responsiveness** | Mobile-first design with Tailwind utility classes |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📚 Sections Overview
+
+| Section        | Description                                                                                           |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| **Home**       | Landing page with your name, professional role, image, and CTA buttons (download resume & contact).   |
+| **About**      | Short bio including education, contact links (email, LinkedIn, GitHub, phone) with subtle animations. |
+| **Skills**     | Displays core technical and soft skills using animated tag bubbles.                                   |
+| **Experience** | Interactive timeline showing work experience, internships, or project contributions.                  |
+| **Projects**   | Highlighted projects with stack tags, short descriptions, and reveal-on-scroll animations.            |
+| **Contact**    | Email, phone, and location details with animated cards and social media buttons (GitHub, LinkedIn).   |
+
+---
+
+## 🧩 Features
+
+- Smooth scroll animations triggered using **IntersectionObserver API**
+- Mobile-friendly design with fluid resizing and layout adjustments
+- Tag-style skill labels, animated project cards, and scroll-triggered content sections
+- Glowing gradients, blur effects, and hover interactions for a modern touch
+
+---
+
+## 📦 Installation & Setup
+
+To run this portfolio locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Abdur-Rehman-643/abdur-react-portfolio.git
+
+# 2. Navigate to the project directory
+cd abdur-react-portfolio
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+
+Now visit:
+👉 `http://localhost:5173/`
+
+---
+
+## 🙌 Credits
+
+- Developed by **Abdur Rehman**
+- Inspired by modern portfolio design trends
+
+---
+
+## 📬 Contact
+
+If you'd like to get in touch:
+
+- 📧 [rehmanabdur643@gmail.com](mailto:rehmanabdur643@gmail.com)
+- 📞 +92 311 7796355
+- 🌍 [LinkedIn](https://www.linkedin.com/in/abdur-rehman-0a3186278)
+- 💻 [GitHub](https://github.com/Abdur-Rehman-643)
+
+---

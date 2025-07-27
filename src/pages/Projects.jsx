@@ -115,7 +115,7 @@ const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
-  // Trigger card animations when section is visible
+  // Animate cards one by one
   useEffect(() => {
     if (isSectionVisible) {
       projectData.forEach((_, i) => {
@@ -130,15 +130,18 @@ const Projects = () => {
     <section
       id="projects"
       ref={sectionRef}
-      className={`py-12 md:py-16 bg-gray-50 rounded-3xl shadow-md mx-4 sm:mx-8 lg:mx-16 overflow-hidden will-change-transform transition-all duration-1000 ease-in-out transform ${
-        isSectionVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-10"
-      }`}
+      className="py-12 md:py-16 bg-gray-50 rounded-3xl shadow-md mx-4 sm:mx-8 lg:mx-16 overflow-hidden"
       style={{ fontFamily: "'Segoe UI', sans-serif" }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10 text-gray-800 tracking-tight">
+        {/* Heading Animation */}
+        <h2
+          className={`text-3xl sm:text-4xl font-bold text-center mb-10 text-gray-800 tracking-tight transition-all duration-700 ${
+            isSectionVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-6"
+          }`}
+        >
           My <span className="text-blue-600">Projects</span>
         </h2>
 
@@ -153,6 +156,7 @@ const Projects = () => {
               } hover:shadow-xl hover:-translate-y-2`}
               style={{
                 minHeight: "260px",
+                transitionDelay: `${index * 150}ms`,
               }}
             >
               <div className="p-4 sm:p-5">
