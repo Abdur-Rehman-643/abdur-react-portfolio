@@ -2,22 +2,91 @@ import React, { useEffect, useRef, useState } from "react";
 
 const projectData = [
   {
-    title: "Minute Master",
+    title: "Final Year Project: FruitMate - Smart Market Assistant System",
     description:
-      "Developed an innovative platform that automates the generation of meeting minutes using various machine learning techniques. Implemented advanced text summarization algorithms to extract key points and generate concise summaries from meeting transcripts.",
-    tech: ["Machine Learning", "NLP", "Text Summarization", "Next"],
+      "Designed and implemented a system for automated fruit/vegetable identification, real-time weighing, pricing, and smart receipt generation, aimed at improving efficiency and customer experience in traditional markets.",
+    tech: ["Computer Vision", "IoT Sensors", "Load Cell", "Arduino"],
   },
   {
-    title: "Resume Recommendation System",
+    title: "My Riding App",
     description:
-      "Built a web interface using the concept of NLP, Restful APIs, and Machine learning to recommend and optimize resumes based on job descriptions.",
-    tech: ["NLP", "REST API", "Machine Learning", "React"],
+      "A secure real-time ride-booking platform with OTP-based ride verification and live status tracking for passengers and drivers.",
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Socket.IO",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    title: "Hotel Booking System",
+    description:
+      "A full-featured hotel management platform with a guest booking portal and admin dashboard for managing rooms, bookings, employees, revenue, and reviews. Integrated secure Stripe payments.",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Stripe"],
+  },
+  {
+    title: "Urdu Text Summarization Model",
+    description:
+      "Fine-tuned google/mt5-small model on XL-Sum Urdu dataset for abstractive text summarization.",
+    tech: ["PyTorch", "Transformers", "XL-Sum Urdu Dataset"],
+  },
+  {
+    title: "Student Alumni System",
+    description:
+      "Developed both desktop and web-based systems for managing alumni records using SQL database integration.",
+    tech: ["C#", "ASP.NET", "WPF", "SQL"],
   },
   {
     title: "Web Text Classifier using Graph-Based k-NN",
     description:
-      "Python-based web content classifier that scrapes, preprocesses, and classifies text using graph representations and MCS-based k-NN. Includes full evaluation pipeline.",
-    tech: ["Python", "NLTK", "NetworkX", "Graph Theory", "ML"],
+      "Python-based text classification system that scrapes, preprocesses, and classifies content using graph representations and MCS-based k-NN.",
+    tech: [
+      "Python",
+      "NLTK",
+      "NetworkX",
+      "scikit-learn",
+      "BeautifulSoup",
+      "Pandas",
+      "Matplotlib",
+    ],
+  },
+  {
+    title: "Inventory Management System",
+    description:
+      "Developed an inventory tracking system for optimizing stock management using Windows Forms and SQL.",
+    tech: ["C#", "Windows Forms", "SQL"],
+  },
+  {
+    title: "Operating System Simulation",
+    description:
+      "Created an OS simulator demonstrating multitasking and resource allocation, built in C++ for Linux.",
+    tech: ["Linux", "C++"],
+  },
+  {
+    title: "DOS Utility Tool",
+    description:
+      "Built a utility in x86 Assembly for basic DOS operations like file I/O, time/date display, and text-based interaction.",
+    tech: ["Assembly (x86)", "MASM", "DOS"],
+  },
+  {
+    title: "Shortest Path Finder",
+    description:
+      "Implemented Dijkstra’s algorithm to compute shortest paths across graph nodes in a C++ system using STL.",
+    tech: ["C++", "STL"],
+  },
+  {
+    title: "Digital Bazar",
+    description:
+      "Java Swing–based desktop marketplace for buying, selling, and renting products with history tracking and filters.",
+    tech: ["Java", "Java Swing"],
+  },
+  {
+    title: "Payroll Management System",
+    description:
+      "Console application to manage employee salaries and generate monthly salary slips using file handling in C++.",
+    tech: ["C++"],
   },
 ];
 
